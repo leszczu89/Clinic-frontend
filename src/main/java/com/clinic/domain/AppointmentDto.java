@@ -1,16 +1,16 @@
 package com.clinic.domain;
 
+import java.time.LocalDate;
 import java.time.LocalTime;
-import java.util.Date;
 
 public class AppointmentDto {
-    private Date date;
+    private LocalDate date;
     private LocalTime time;
     private boolean paid;
     private DoctorDto doctor;
     private PatientDto patient;
 
-    public AppointmentDto(Date date, LocalTime time, boolean paid, DoctorDto doctor, PatientDto patient) {
+    public AppointmentDto(LocalDate date, LocalTime time, boolean paid, DoctorDto doctor, PatientDto patient) {
         this.date = date;
         this.time = time;
         this.paid = paid;
@@ -21,11 +21,11 @@ public class AppointmentDto {
     public AppointmentDto() {
     }
 
-    public Date getDate() {
+    public LocalDate getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDate date) {
         this.date = date;
     }
 
